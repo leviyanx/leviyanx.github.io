@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>保持一个简洁的windows系统所需要的软件</title>
+    <link href="/2022/03/03/%E4%BF%9D%E6%8C%81%E4%B8%80%E4%B8%AA%E7%AE%80%E6%B4%81%E7%9A%84windows%E7%B3%BB%E7%BB%9F%E6%89%80%E9%9C%80%E8%A6%81%E7%9A%84%E8%BD%AF%E4%BB%B6/"/>
+    <url>/2022/03/03/%E4%BF%9D%E6%8C%81%E4%B8%80%E4%B8%AA%E7%AE%80%E6%B4%81%E7%9A%84windows%E7%B3%BB%E7%BB%9F%E6%89%80%E9%9C%80%E8%A6%81%E7%9A%84%E8%BD%AF%E4%BB%B6/</url>
+    
+    <content type="html"><![CDATA[<h1 id="保持一个简洁的windows系统所需要的软件"><a href="#保持一个简洁的windows系统所需要的软件" class="headerlink" title="保持一个简洁的windows系统所需要的软件"></a>保持一个简洁的windows系统所需要的软件</h1><p>本文目的：</p><ol><li>复盘我清理系统的过程，记录必需的软件，下次再帮人清理系统的时候直接看这份文档就行了；</li><li>尝试给出一份比较通用的清理系统的方案，保持系统简洁；</li></ol><span id="more"></span><p><a href="https://geekuninstaller.com/">geek uninstaller</a>：</p><ul><li>意义：干净地卸载软件<ul><li>干净地卸载软件。它不仅会卸载软件，还会清理使用软件后遗留下来的数据文件、注册表项等等（示例： <a href="https://geekuninstaller.com/assets/images/screen_2.png">https://geekuninstaller.com/assets/images/screen_2.png</a> ）</li></ul></li></ul><p><a href="https://www.huorong.cn/">火绒</a>：</p><ul><li>意义：一个可靠的电脑管家<ul><li>1）杀毒，清理垃圾；</li><li>2）屏蔽<strong>广告弹窗</strong>；</li><li>3）不流氓；</li></ul></li><li>注意：<ul><li>1）使用火绒之前，先把某管家这类杀毒软件先退出，再卸载（用geek uninstaller）；</li></ul></li></ul><p><a href="https://u.tools/">utools</a>：</p><ul><li>意义：还你一个干净的桌面<ul><li>1）应用启动器。有了它就不用在桌面放上一堆快捷方式，所有的应用都可以从utools启动；</li><li>2）与everything结合，可以搜索到<strong>本机的任何文件</strong>，不用再因为怕找不到文件而把文件都堆在桌面了；</li><li>于是，桌面就可以只留一个垃圾桶了，还你一个干干净净的桌面。</li></ul></li><li>注：<ul><li>如果软件不是安装的，而是从压缩包中解压的，可以手动把软件的启动程序放到utools中，然后它也可以通过utools启动。</li></ul></li></ul><p><a href="https://cn.bing.com/">Bing搜索引擎</a>：</p><ul><li>意义：断绝垃圾软件的来源<ul><li>我观察到有许多人无意之中下载了垃圾软件的原因是使用了百度搜索引擎，通过百度下载的软件包里会附带xx下载器，或者其他什么垃圾软件，总之不是来自软件官网的安装包（这是百度搜索推荐的锅）。使用bing就没有这个问题，因为bing会直接把官网链接放在第一条推荐给你，这样你就可以直接从官网下载最干净的安装包，从源头杜绝垃圾软件。</li></ul></li><li>注：<ul><li>可以通过Microsoft edge来使用bing，因为bing是它的默认搜索引擎，而edge是windows自带的。</li></ul></li></ul><p>于是，本文提到的这些软件可以构成一个比较系统的方案：</p><ol><li>没有垃圾软件——bing+geek uninstaller；</li><li>干净的桌面——utools+火绒；</li><li>安全的系统——geek+火绒+bing；</li></ol>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>to-public/published</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>ArchLinux-解决wine系应用（如tim、wps）无法使用fcitx输入中文的问题</title>
+    <link href="/2022/01/06/ArchLinux-%E8%A7%A3%E5%86%B3wine%E7%B3%BB%E5%BA%94%E7%94%A8%EF%BC%88%E5%A6%82tim%E3%80%81wps%EF%BC%89%E6%97%A0%E6%B3%95%E4%BD%BF%E7%94%A8fcitx%E8%BE%93%E5%85%A5%E4%B8%AD%E6%96%87%E7%9A%84%E9%97%AE%E9%A2%98/"/>
+    <url>/2022/01/06/ArchLinux-%E8%A7%A3%E5%86%B3wine%E7%B3%BB%E5%BA%94%E7%94%A8%EF%BC%88%E5%A6%82tim%E3%80%81wps%EF%BC%89%E6%97%A0%E6%B3%95%E4%BD%BF%E7%94%A8fcitx%E8%BE%93%E5%85%A5%E4%B8%AD%E6%96%87%E7%9A%84%E9%97%AE%E9%A2%98/</url>
+    
+    <content type="html"><![CDATA[<h2 id="我的系统"><a href="#我的系统" class="headerlink" title="我的系统"></a>我的系统</h2><ul><li>archlinux</li><li>i3wm</li></ul><h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><p>在应用程序对应的<strong>启动文件</strong>中加入以下代码</p><figure class="highlight routeros"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs routeros"><span class="hljs-built_in">export</span> <span class="hljs-attribute">XMODIFIERS</span>=<span class="hljs-string">&quot;@im=fcitx&quot;</span><br><br><span class="hljs-built_in">export</span> <span class="hljs-attribute">GTK_IM_MODULE</span>=<span class="hljs-string">&quot;fcitx&quot;</span><br><br><span class="hljs-built_in">export</span> <span class="hljs-attribute">QT_IM_MODULE</span>=<span class="hljs-string">&quot;fcitx&quot;</span><br></code></pre></div></td></tr></table></figure><p><strong>已解决应用：deepin-tim（deepin.com.qq.office）、wps</strong>（因为我就用了这两个，但方法是通用的）</p><p>如何找到应用对应的启动文件呢？</p><p>方法一（如果你的文件管理器是 pcmancf）：</p><p>打开 <code>pcmancf</code>，进入 <code>Applications</code> 那一栏，找到对应的应用程序图标，右击查看属性。<code>Desktop Entry</code> 中 <code>command</code> 那一栏就有启动文件的位置。</p><p>方法二：</p><p>进入路径 <code>/usr/share/applications/</code>，找到你想要修改的应用程序对应的 <code>.desktop</code> 文件（以tim举例，就是找到 <code>deepin.com.qq.office.desktop</code> 文件）。</p><p>查看文件，其中 <code>Exec</code> 一行就是文件位置（比如tim： <code>Exec=&quot;/opt/deepinwine/apps/Deepin-TIM/run.sh&quot; -u %u</code>，那么启动文件就是 <code>/opt/deepinwine/apps/Deepin-TIM/run.sh</code>，修改它就行了）。</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>to-public/published</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>我是如何用 Maverick来搭建自己的博客？</title>
+    <link href="/2021/02/04/%E6%88%91%E6%98%AF%E5%A6%82%E4%BD%95%E7%94%A8%20Maverick%E6%9D%A5%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%EF%BC%9F/"/>
+    <url>/2021/02/04/%E6%88%91%E6%98%AF%E5%A6%82%E4%BD%95%E7%94%A8%20Maverick%E6%9D%A5%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%EF%BC%9F/</url>
+    
+    <content type="html"><![CDATA[<p>最近一次的更新日期：2021-02-16 20:42:10</p><span id="more"></span><p>参考文章</p><ul><li><a href="https://sspai.com/post/58013">用 GitHub 搭建静态博客太繁琐？用这个小工具实现「傻瓜式」发布</a></li><li><a href="https://github.com/AlanDecode/Blog-With-GitHub-Boilerplate">Blog-With-GitHub-Boilerplate</a>（这是博客文章《完全用 GitHub 写博客》所提出流程的示例仓库。）</li><li><a href="https://github.com/AlanDecode/Maverick">Maverick</a></li></ul><p>默认都是在master（后面改名为source）分支下操作。</p><h2 id="搭建过程"><a href="#搭建过程" class="headerlink" title="搭建过程"></a>搭建过程</h2><p>准备好文件&#x2F;文件夹</p><ul><li>.github（先用复制的，后期自己改）</li><li>assets</li><li>src（这里是放博客的，请准备至少一篇博客（md格式），放在这里）<ul><li>images</li><li>static</li></ul></li><li>config.py（先用复制的，后期自己修改）</li><li>Makefile（先用复制的，后期自己修改）</li><li>README.md</li></ul><hr><p>修改master分支名</p><p>1.在github修改master分支名为source</p><p>2.在本地执行以下操作</p><figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">git branch -m master <span class="hljs-built_in">source</span><br>git fetch origin<br>git branch -u origin/source <span class="hljs-built_in">source</span><br></code></pre></div></td></tr></table></figure><hr><p>操作cache分支</p><p>1.创建cache分支。</p><figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">git branch cache<br></code></pre></div></td></tr></table></figure><p>2.在cache分支下创建文件<code>sizeinfo.json</code>。</p><p>3.把分支提交到github</p><figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash"><span class="hljs-comment"># 此时处于cache分支</span><br>git push origin HEAD -u<br></code></pre></div></td></tr></table></figure><hr><p>操作gh-pages分支（gh-pages分支是用来展示的）</p><p>1.创建gh-pages分支，并提交到github</p><figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">git branch gh-pages<br>git checkout gh-pages<br><br><span class="hljs-comment"># 可以修改一些文件，并提交commit</span><br><br>git push origin HEAD -u<br></code></pre></div></td></tr></table></figure><p>2.在github，进入仓库<code>settings</code>，在<code>Github Pages</code>选项下把<code>Source</code>换成gh-pages分支。</p><hr><p>准备一个token，并为这个仓库添加token</p><p>准备token的过程省略，现在假设已经得到一个token。</p><p>1.进入<code>settings</code>-<code>Secrets</code>，选择<code>New repository secret</code>，创建一个secret。</p><ul><li>Name填<code>PERSONAL_TOKEN</code>。</li><li>Value填得到的token。</li></ul><p>2.选择添加。</p><hr><p>使用Maverick和Galileo（Maverick的一个主题）</p><p>1.创建一个文件<code>.gitmodules</code>，不填内容。</p><p>2.执行命令</p><figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash"><span class="hljs-comment">#现在在source分支，如果不是请切换到source</span><br><br><span class="hljs-comment"># 添加子模块——Maverick</span><br>git submodule add https://github.com/AlanDecode/Maverick.git<br><br><span class="hljs-comment"># 添加子模块——Galileo主题的latest分支</span><br>git submodule add -b latest https://github.com/AlanDecode/Maverick-Theme-Galileo.git ./Galileo<br></code></pre></div></td></tr></table></figure><p>3.提交到github。</p><hr><p>自定义配置来适配自己的博客</p><p>1.编辑<code>conf.py</code>，修改以下内容（只挑出现在最必要改的）</p><ul><li><code>site_prefix</code>：改成自己博客的名字</li></ul><hr><p>至此博客已经可以正常运行了，可以进入网址<code>https://用户名.github.io/仓库名称/</code>查看是否成功。</p><h2 id="自定义步骤"><a href="#自定义步骤" class="headerlink" title="自定义步骤"></a>自定义步骤</h2><p>自动化上传博客流程</p><p>复制两个文件</p><ul><li>update_site.bat（windows下使用）</li><li>update_site.sh（linux&#x2F;macos下使用）</li></ul><hr><p>修改博客的一些信息&#x2F;配置</p><ul><li><code>conf.py</code><ul><li><code>template</code>：可以切换主题<ul><li>可选的主题有：Galileo、</li></ul></li><li><code>site_name</code></li><li><code>site_logo</code><ul><li>要求</li></ul></li><li><code>site_build_date</code></li><li><code>author</code></li><li><code>email</code></li><li><code>author_homepage</code></li><li><code>description</code></li><li><code>key_words</code></li><li><code>external_links</code></li><li><code>nav</code></li><li><code>social_links</code></li></ul></li></ul><hr><p>写文章的注意事项</p><ul><li><p>支持的格式是<code>markdown</code>。</p></li><li><p>在文章的首部位置，需要写上文章的元数据，必须要填的有如下</p><ul><li>layout</li><li>title</li><li>slug（文章的链接）</li><li>date</li></ul></li><li><p>元数据使用的数据格式是YAML，注意使用规则——空格之类的。</p></li><li><p>更多详细的要求，看<a href="https://github.com/AlanDecode/Maverick">这里</a>。</p></li></ul>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>to-public/published</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  
+</search>
